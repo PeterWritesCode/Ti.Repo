@@ -27,13 +27,14 @@ label {
 }
 
 input[type="email"],
-input[type="name"],
+input[type="name"],input[type="text"],
 input[type="password"] {
     width: 100%;
     padding: 10px;
     color: var(--texto);
     border: 1px solid var(--texto);
     border-radius: 30px;
+    display: flex;
 }
 button {
     width: 100%;
@@ -45,4 +46,20 @@ button {
     margin-top: 60px;
     font-size: 15px;
     cursor: pointer;
+}
+a {
+    color: var(--texto);
+    text-decoration: underline;
+}
+/*Olho fechado password*/
+.password-toggle {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+.password-toggle img {
+    width: 20px;
+    height: auto;
 }

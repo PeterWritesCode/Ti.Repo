@@ -5,12 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SPADA</title>
     <link rel="stylesheet" href="geral.css">
+    <link rel="stylesheet" href="../index.css">
 </head>
 <body>
-<img src="imgs/spada.svg" alt="spada imagem">
-<!--Imagem centrada-->
-<div class="center-image">
-    <img class="image" src="imgs/spada2.svg" alt="spada texto">
+<div class="container">
+    <img class="splash-header" src="imgs/spada2.svg" alt="">
+    <a href="log-in-sign-up/login.html" class="botao">Iniciar</a>
+     <!-- Splash Screen code starts here  -->
+    <div class="splash">
+        <img class="splash-header" src="imgs/spada.svg" alt="">
+    </div>
+    <!-- Splash Screen code ends here  -->
 </div>
 </body>
+<script>
+    var splashScreen = document.querySelector('.splash');
+    splashScreen.addEventListener('click',()=>{
+        splashScreen.style.opacity = 0;
+        setTimeout(()=>{
+            splashScreen.classList.add('hidden')
+        },610)
+    })
+</script>
 </html>
